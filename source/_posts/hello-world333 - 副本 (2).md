@@ -7,41 +7,61 @@ tags:
  - sf
  - heW
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
+Go ahead, play around with the editor! Be sure to check out **bold** and *italic* styling, or even [links](https://google.com). You can type the Markdown syntax, use the toolbar, or use shortcuts like `cmd-b` or `ctrl-b`.
+<!-- more -->
 
-<!--more-->
+# Intro
+Go ahead, play around with the editor! Be sure to check out **bold** and *italic* styling, or even [links](https://google.com). You can type the Markdown syntax, use the toolbar, or use shortcuts like `cmd-b` or `ctrl-b`.
 
-## Quick Start
+## Lists
+Unordered lists can be started using the toolbar or by typing `* `, `- `, or `+ `. Ordered lists can be started by typing `1. `.
 
-### Create a new post
+### Unordered
+* Lists are a piece of cake
+* They even auto continue as you type
+* A double enter will end them
+* Tabs and shift-tabs work too
 
-``` bash
-$ hexo new "My New Post"
-```
+### Ordered
+1. Numbered lists...
+2. ...work too!
 
-More info: [Writing](https://hexo.io/docs/writing.html)
+## What about images?
+![Yes](https://i.imgur.com/sZlktY7.png)
 
+Marked - Markdown Parser
+========================
 
-### Run server
+[Marked] lets you convert [Markdown] into HTML.  Markdown is a simple text format whose goal is to be very easy to read and write, even when not converted to HTML.  This demo page will let you type anything you like and see how it gets converted.  Live.  No more waiting around.
 
-``` bash
-$ hexo server
-```
+How To Use The Demo
+-------------------
 
-More info: [Server](https://hexo.io/docs/server.html)
+1. Type in stuff on the left.
+2. See the live updates on the right.
 
-### Generate static files
+That's it.  Pretty simple.  There's also a drop-down option in the upper right to switch between various views:
 
-``` bash
-$ hexo generate
-```
+- **Preview:**  A live display of the generated HTML as it would render in a browser.
+- **HTML Source:**  The generated HTML before your browser makes it pretty.
+- **Lexer Data:**  What [marked] uses internally, in case you like gory stuff like this.
+- **Quick Reference:**  A brief run-down of how to format things using markdown.
 
-More info: [Generating](https://hexo.io/docs/generating.html)
+Why Markdown?
+-------------
 
-### Deploy to remote sites
+It's easy.  It's not overly bloated, unlike HTML.  Also, as the creator of [markdown] says,
 
-``` bash
-$ hexo deploy
-```
+> The overriding design goal for Markdown's
+> formatting syntax is to make it as readable
+> as possible. The idea is that a
+> Markdown-formatted document should be
+> publishable as-is, as plain text, without
+> looking like it's been marked up with tags
+> or formatting instructions.
 
-More info: [Deployment](https://hexo.io/docs/deployment.html)
+Ready to start writing?  Either start changing stuff on the left or
+[clear everything](?text=) with a simple click.
+
+[Marked]: https://github.com/markedjs/marked/
+[Markdown]: http://daringfireball.net/projects/markdown/
