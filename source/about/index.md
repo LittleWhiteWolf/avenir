@@ -34,6 +34,9 @@
             </div>
         </div>
         <div class="track-holder" style="margin-left: 35px; border-left: 1px solid #30415655;">
-
+            <ul>
+                <li>2019.03.09 站点发布到GitHub Pages</li>
+                <li>之前？无所谓了吧</li>
+            </ul>
         </div>
     </div>
