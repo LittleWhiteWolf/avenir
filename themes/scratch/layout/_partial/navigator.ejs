@@ -1,0 +1,20 @@
+<div class="navigator">
+    <div class="navigator-title">
+        <a href="<%- url_for() %>" class="blog-title"><%= config.title %></a>
+        <!--<span class="blog-subtitle"><%= config.subtitle %></span>-->
+    </div>
+    <div class="navigator-menu">
+        <ul class="menu">
+            <% for (name in theme.menu) { %>
+            <li class="menu-item">
+                <a href="<%- url_for(theme.menu[name]) %>" class="menu-item-link"><%= name %></a>
+            </li>
+            <% } %>
+        </ul>
+    </div>
+    <div class="google-site-search" style="display: flex">
+        <i class="fa fa-search" style="line-height: 54px"></i>
+        <%- search_form({text: 'Google...'}) %>
+    </div>
+
+</div>

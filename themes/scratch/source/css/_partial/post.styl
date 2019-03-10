@@ -1,0 +1,51 @@
+.post-wrapper {
+  display flex
+  .post-content {
+    border-right 6px solid #1d1f21
+    background-color #30415655
+
+    .post-content-meta{
+      padding 6px
+      padding-left 9px
+      border-bottom 1px solid #c9cacc55
+
+      a.post-category-link, a.post-tag-link{
+        color #c6e48b
+      }
+
+      .post-tag{
+        margin-left 20px
+      }
+      .post-tag+.post-tag{
+        margin-left 12px
+      }
+    }
+    .post-content-body{
+      padding 0 10px
+
+      a {
+        color #c6e48b
+      }
+    }
+  }
+  .post-toc {
+    min-width 150px
+    .post-toc-bar {
+      padding 6px
+      background-color #30415655
+      position sticky
+      top 20px
+    }
+    .post-toc-list {
+      padding-right 0.8em
+      border 1px solid #30415655
+      position sticky
+      top 53px
+    }
+    ol {
+      font-size 14px
+      list-style none
+      padding-left 0.6em
+    }
+  }
+}

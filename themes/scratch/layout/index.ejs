@@ -1,0 +1,32 @@
+<div class="index-template">
+    <div class="index-template-left post-excerpt-list">
+        <% page.posts.each(function (post) { %>
+        <div class="post">
+            <div class="post-title">
+                <% post.categories.each(function (c){ %>
+                <small class="post-category"><i class="fa fa-folder-open-o"></i> <a class="post-category-link"><%= c.name %></a> <i class="fa fa-chevron-right"/> </small>
+                <% }) %>
+                <a class="post-title-link" href="<%- url_for(post.path) %>"><%= post.title %></a>
+                <span class="post-tags-wrapper">
+                    <% post.tags.each(function (t){ %>
+                        <small class="post-tag"><i class="fa fa-tags"></i><a class="post-tag-link"> <%= t.name %></a></small>
+                    <% }) %>
+                </span>
+            </div>
+            <div class="post-excerpt"><%- post.excerpt %></div>
+            <div class="post-meta"><small class="post-time">post @ <%- date(post.date, "YYYY-MM-DD HH:mm:ss") %></small></div>
+        </div>
+        <% }) %>
+        <a href="/archives" class="go-to-archives" title="more">· · ·</a>
+    </div>
+    <div class="index-template-right">
+        <div class="index-template-right-widget all-categories">
+            <div class="index-template-right-widget-bar"><i class="fa fa-folder-open-o"></i> Categories</div>
+            <%- list_categories() %>
+        </div>
+        <div class="index-template-right-widget tags-cloud">
+            <div class="index-template-right-widget-bar"><i class="fa fa-tags"></i> Tags</div>
+            <div class="tags-cloud-wrapper"><%- tagcloud() %></div>
+        </div>
+    </div>
+</div>
