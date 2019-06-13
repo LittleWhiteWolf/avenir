@@ -13,7 +13,7 @@
     <div style="width:50%">
         <div class="accomplishment-bar" style="background-color: #30415655; padding: 4px; border-bottom: 1px solid rgba(201,202,204,0.333);"><i class="fa fa-chevron-right" /> Unlocked</div>
         <ul id="accomplishment-list">
-            <li>2019.05.19 省考笔试</li>
+            <li>2019.05.19 省考笔试(06.13 62.31+62.5)</li>
             <li>2019.03.09 站点发布到GitHub Pages</li>
             <li>2019.01.20 下单CasioPX-160</li>
             <li>《月亮和六便士》</li>
