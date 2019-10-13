@@ -36,18 +36,21 @@
         </ul>
     </div>
     <ul style="margin-top: -20px;list-style-type: none">
+        <!-- todo: 书架，车载导航 -->
         <li><input type="checkbox" /> 上官婉儿修竹墨客，28</li>
         <li><input type="checkbox" /> 后羿精灵王，28</li>
         <li><input type="checkbox" /> 马超幸存者，28</li>
         <li><input type="checkbox" /> 11月话费，50</li>
+        <li><input type="checkbox" /> 某三叠日常消费，62 - 充银卡</li>
         <li><input type="checkbox" /> 眼镜A，98 - 还花呗</li>
         <li><input type="checkbox" /> 眼镜B，98 - 还花呗</li>
+        <li><input type="checkbox" /> 半年度流量费，120 - 淘宝找个活动充掉</li>
         <li><input type="checkbox" /> 天字古道徒步，138 - 充银卡</li>
         <li><input type="checkbox" /> 眼镜C，149 - 充银卡</li>
         <li><input type="checkbox" /> 宫本地狱之眼，168</li>
         <li><input type="checkbox" /> 孙尚香末日机甲，168</li>
+        <li><input type="checkbox" /> 老南门茶馆，175</li>
         <li><input type="checkbox" /> 修车A，200 - 充微信钱包</li>
-        <li><input type="checkbox" /> 下一年度流量费，240 - 淘宝找个活动充掉</li>
         <li><input type="checkbox" /> 只狼(steam)，268</li>
         <li><input type="checkbox" /> 修车B，300 - 充微信钱包</li>
         <li><input type="checkbox" /> 苍南A，460 - 花呗</li>
@@ -57,6 +60,7 @@
         <li><input type="checkbox" /> 修车C，1000 - 换前保险杠</li>
         <li><input type="checkbox" /> AirPods，1500 - 置换旧5s</li>
         <li><input type="checkbox" /> PS4Pro2TB，3199</li>
+        <li><input type="checkbox" /> 床(雅琼)，4330</li>
         <li><input type="checkbox" /> 小米笔记本，6899</li>
         <li><input type="checkbox" /> ipad pro，7890 - 置换旧mini</li>
         <li><input type="checkbox" /> 小米游戏本，8999</li>
