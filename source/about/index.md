@@ -40,6 +40,7 @@
         <div style="position:absolute;height:100%;width:100%;"></div>
         <ul class="target-list" style="list-style-type: none">
             <!-- todo: 书架，车载导航 -->
+            <li><input type="checkbox" />&nbsp;双子杀手，12 - 民生白</li>
             <li><input type="checkbox" checked/>&nbsp;<del>上官婉儿修竹墨客，28</del>&nbsp;</li>
             <li><input type="checkbox" />&nbsp;后羿精灵王，28</li>
             <li><input type="checkbox" />&nbsp;马超幸存者，28</li>
