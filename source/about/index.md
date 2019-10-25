@@ -47,6 +47,7 @@
             <li><input type="checkbox" checked/>&nbsp;<del>某三叠日常消费，62 - 充银卡</del>&nbsp;</li>
             <li><input type="checkbox" checked/>&nbsp;<del>眼镜A，98 - 还花呗</del>&nbsp;</li>
             <li><input type="checkbox" checked/>&nbsp;<del>眼镜B，98 - 还花呗</del>&nbsp;</li>
+            <li><input type="checkbox" />&nbsp;弄堂里，98 - 中信i白金</li>
             <li><input type="checkbox" />&nbsp;天字古道徒步，138 - 充银卡</li>
             <li><input type="checkbox" />&nbsp;眼镜C，149 - 充银卡</li>
             <li><input type="checkbox" />&nbsp;宫本地狱之眼，168</li>
