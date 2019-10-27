@@ -13,7 +13,7 @@
 <div style="display:flex;justify-content:space-between;">
     <div>
         <h4 style="margin-top: -15px;">已解锁</h4>
-        <ul id="accomplishment-list" style="margin-top: -40px;">
+        <ul UNDERGOING="追平黄金账户亏损" id="accomplishment-list" style="margin-top: -40px;">
             <li>2019.10.14 氪金-上官婉儿修竹墨客</li>
             <li>2019.10.02 吴兴天字古道</li>
             <li>2019.09.29 宋音9</li>
@@ -36,14 +36,14 @@
             <li>《亲密关系》</li>
         </ul>
     </div>
-    <div style="position:relative;margin-top:-95px;">
+    <div style="position:relative;margin-top:-75px;">
         <div style="position:absolute;height:100%;width:100%;"></div>
-        <ul class="target-list" style="list-style-type: none">
-            <!-- todo: 书架，车载导航 -->
+        <ul todo="书架，车载导航" class="target-list" style="list-style-type: none">
             <li><input type="checkbox" />&nbsp;双子杀手，12 - 民生白</li>
             <li><input type="checkbox" checked/>&nbsp;<del>上官婉儿修竹墨客，28</del>&nbsp;</li>
             <li><input type="checkbox" />&nbsp;后羿精灵王，28</li>
             <li><input type="checkbox" />&nbsp;马超幸存者，28</li>
+            <li><input type="checkbox" />&nbsp;半小时漫画经济学1&2，35 - 微信钱包</li>
             <li><input type="checkbox" checked/>&nbsp;<del>某三叠日常消费，62 - 充银卡</del>&nbsp;</li>
             <li><input type="checkbox" checked/>&nbsp;<del>眼镜A，98 - 还花呗</del>&nbsp;</li>
             <li><input type="checkbox" checked/>&nbsp;<del>眼镜B，98 - 还花呗</del>&nbsp;</li>
