@@ -1,14 +1,3 @@
-<!-- Todo
-[x] google搜索
-[x] 归档
-[x] 分类归档
-[x] 标签归档
-[x] 正文
-[x] 首页
-[x] 目录(div.post-toc)跟随页面滚动平移
-[x] 正文页上给“分类”和“标签”加上超链接
-[ ] "about"页
--->
 <h3 style="text-align:center; border-bottom: 1px solid #e6e6e6; padding-bottom:10px;">成就墙 & 许愿墙</h3>
 <div style="display:flex;justify-content:space-between;">
     <div>
@@ -44,10 +33,12 @@
             <li><input type="checkbox" />&nbsp;后羿精灵王，28</li>
             <li><input type="checkbox" />&nbsp;马超幸存者，28</li>
             <li><input type="checkbox" />&nbsp;半小时漫画经济学1&2，35 - 微信钱包</li>
+            <li><input type="checkbox" />&nbsp;三番茶，38 - 微信钱包</li>
             <li><input type="checkbox" checked/>&nbsp;<del>某三叠日常消费，62 - 充银卡</del>&nbsp;</li>
             <li><input type="checkbox" checked/>&nbsp;<del>眼镜A，98 - 还花呗</del>&nbsp;</li>
             <li><input type="checkbox" checked/>&nbsp;<del>眼镜B，98 - 还花呗</del>&nbsp;</li>
             <li><input type="checkbox" />&nbsp;弄堂里，98 - 中信i白金</li>
+            <li><input type="checkbox" />&nbsp;海宁煲，129 - 充银卡</li>
             <li><input type="checkbox" />&nbsp;天字古道徒步，138 - 充银卡</li>
             <li><input type="checkbox" />&nbsp;眼镜C，149 - 充银卡</li>
             <li><input type="checkbox" />&nbsp;宫本地狱之眼，168</li>
@@ -57,6 +48,7 @@
             <li><input type="checkbox" checked/>&nbsp;<del>年度流量费，200 - 换58套餐</del>&nbsp;</li>
             <li><input type="checkbox" />&nbsp;老南门茶馆，245 - 充银卡</li>
             <li><input type="checkbox" />&nbsp;只狼(steam)，268</li>
+            <li><input type="checkbox" />&nbsp;花藤屋，269 - 充银卡</li>
             <li><input type="checkbox" />&nbsp;修车B，300 - 充微信钱包</li>
             <li><input type="checkbox" checked/>&nbsp;<del>苍南A(回程车费)，260 - 花呗</del>&nbsp;</li>
             <li><input type="checkbox" />&nbsp;苍南B-红包，500 - 充微信钱包</li>
@@ -73,7 +65,6 @@
         </ul>
     </div>
 </div>
-
 
 <style>
 .target-list li{
