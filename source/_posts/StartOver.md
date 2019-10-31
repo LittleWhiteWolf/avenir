@@ -1,5 +1,5 @@
 ---
-title: 证券操作随笔
+title: MY PLAY WITH MONEY
 date: 2019-03-10 23:27:37
 categories: 逻辑
 tags: [A股, 黄金]
