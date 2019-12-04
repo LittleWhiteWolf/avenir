@@ -15,6 +15,16 @@
 <% } %>
 
 <script src="https://cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+<script>
+  $(function () {
+    $("#realized").niceScroll({
+      cursorcolor: "#e6e6e6",
+      cursoropacitymin: 0.15,
+      cursoropacitymax: 0.5
+    })
+  })
+</script>
 
 <% if (theme.fancybox){ %>
   <%- css('fancybox/jquery.fancybox') %>
