@@ -17,11 +17,82 @@
 <script src="https://cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
 <script>
+  let t = true // global
+
   $(function () {
-    $("#realized").niceScroll({
-      cursorcolor: "#e6e6e6",
-      cursoropacitymin: 0.15,
-      cursoropacitymax: 0.5
+    // $("#realized").niceScroll({
+    //   cursorcolor: "#e6e6e6",
+    //   cursoropacitymin: 0.15,
+    //   cursoropacitymax: 0.5
+    // }) // 已停用
+
+    function collapse(self) {
+      $(self).find('i').removeClass('fa-chevron-down')
+      $(self).find('i').addClass('fa-chevron-right')
+      const date = $(self).text().trim().replace(/\./g, '-')
+      $('#target-list-west li.f-'+date).css('display', 'none')
+      let sum = 0
+      $('#target-list-west li.f-'+date).each(function(idx, el) {
+        const val = parseFloat($(el).text().split('，')[1].split('-')[0])
+        sum += val
+      })
+      // 尚无加号的情况下才改span的text
+      if ($(self).find('span').text().indexOf('+')<0) {
+        const tailed = ' '+date.replace(/-/g, '.')+' + '+sum
+        $(self).find('span').text(tailed)
+      }
+    }
+    function expand(self) {
+      $(self).find('i').removeClass('fa-chevron-right')
+      $(self).find('i').addClass('fa-chevron-down')
+      const date = $(self).text().split(' + ')[0].trim().replace(/\./g, '-')
+      $('#target-list-west li.f-'+date).css('display', 'block')
+      const noTail = $(self).text().split(' + ')[0]
+      $(self).find('span').text(noTail)
+    }
+    function partSum(self) {
+      let sum = 0
+      const date = $(self).text().trim().replace(/\./g, '-')
+      $('#target-list-west li.f-'+date).each(function(idx, el) {
+        const val = parseFloat($(el).text().split('，')[1].split('-')[0])
+        sum += val
+      })
+      const tailed = ' '+date.replace(/-/g, '.')+' + '+sum
+      $(self).find('span').text(tailed)
+    }
+
+    $('#pa').on('click', function () {
+      const action = t ? expand : collapse
+      $('#target-list-west li.separate').each(function(idx,el) {
+        action(el)
+      })
+      let sum = 0
+      if (t) {
+        $('#target-list-west li.fulfilled').each(function(idx, el) {
+          const val = parseFloat($(el).text().split('，')[1].split('-')[0])
+          sum += val
+        })
+        $('#pa').text('+ ' + sum.toFixed(2))
+      } else {
+        $('#pa').text('啪 ！')
+      }
+      t = !t
+    })
+
+    $('#target-list-west li.separate').on('click', function(){
+      const self = this
+      if ($(self).find('i').hasClass('fa-chevron-right')) {
+        expand(self)
+      } else {
+        collapse(self)
+      }
+    })
+
+    // 未展开的li.separate下的各自金额之和
+    $('#target-list-west li.separate').each(function(idx,el){
+      if (idx !== 0) { // 从第2条开始
+        partSum(el)
+      }
     })
   })
 </script>
