@@ -1,7 +1,26 @@
 <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<h3 style="text-align:center; border-bottom: 1px solid #e6e6e6; padding-bottom:10px;">成就墙 & 许愿池</h3>
-<div style="display:flex;justify-content:space-around;">
-  <div style="margin-top:-15px;">
+<style>
+  .column-holder {
+    display: flex;
+    justify-content: space-around;
+  }
+  @media (min-width:0px) and (max-width: 768px) {
+    .column-holder {
+      flex-wrap: wrap;
+    }
+    .column {
+      width: 100%;
+    }
+  }
+  @media (min-width:769px) and (max-width: 4096px) {
+    .column-holder {
+      flex-wrap: nowrap;
+    }
+  }
+</style>
+<h3 style="text-align:center; border-bottom: 1px solid #e6e6e6; padding-bottom:10px; margin-bottom: 0.25em;">成就墙 & 许愿池</h3>
+<div class="column-holder">
+  <div class="column column-left">
     <h4 style="">已解锁</h4>
     <ul UNDERGOING="追平SGE账户亏损" id="accomplishment-list" style="margin-left: 24px;">
       <li><>穷查理宝典：大赌大赢</li>
@@ -33,7 +52,7 @@
       <!--可以在iPad上用微信读书看，人类简史、枪炮病菌与钢铁等-->
     </ul>
   </div>
-  <div style="position:relative; margin-top: -15px;">
+  <div class="column column-center">
     <h4 style="">& 领币</h4>
     <ul todo="居家服
     十九年间谋杀小叙
@@ -117,7 +136,7 @@
       <li><i class="fa fa-square-o"></i> 小米游戏本，8999</li>
     </ul>
   </div>
-  <div style="position:relative; margin-top: -15px;">
+  <div class="column column-right">
     <h4 id="pa">啪 ！</h4>
     <div id="realized-no-scroll"><!--由after-footer.ejs里做niceScroll-->
     <!--<div id="realized" style="height:600px;border-bottom: 1px dashed #ddd">&lt;!&ndash;由after-footer.ejs里做niceScroll&ndash;&gt;-->
