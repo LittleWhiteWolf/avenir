@@ -30,7 +30,8 @@
       $(self).find('i').removeClass('fa-chevron-down')
       $(self).find('i').addClass('fa-chevron-right')
       const date = $(self).text().trim().replace(/\./g, '-')
-      $('#target-list-west li.f-'+date).css('display', 'none')
+      $('#target-list-west li.f-'+date).addClass('fulfilled-collapse')
+      $('#target-list-west li.f-'+date).removeClass('fulfilled-expand')
       let sum = 0
       $('#target-list-west li.f-'+date).each(function(idx, el) {
         const val = parseFloat($(el).text().split('，')[1].split('-')[0])
@@ -46,7 +47,8 @@
       $(self).find('i').removeClass('fa-chevron-right')
       $(self).find('i').addClass('fa-chevron-down')
       const date = $(self).text().split(' + ')[0].trim().replace(/\./g, '-')
-      $('#target-list-west li.f-'+date).css('display', 'block')
+      $('#target-list-west li.f-'+date).addClass('fulfilled-expand')
+      $('#target-list-west li.f-'+date).removeClass('fulfilled-collapse')
       const noTail = $(self).text().split(' + ')[0]
       $(self).find('span').text(noTail)
     }
