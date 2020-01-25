@@ -62,6 +62,24 @@
       const tailed = ' '+date.replace(/-/g, '.')+' + '+sum
       $(self).find('span').text(tailed)
     }
+    function collapseColumnCenter(target) {
+      $('#target-list-'+target+' li').addClass('collapsed')
+      $('#target-list-'+target+' li').removeClass('expanded')
+      $('#ellipsis-'+target).css('display', 'block')
+    }
+    function expandColumnCenter(target) {
+      $('#target-list-'+target+' li').addClass('expanded')
+      $('#target-list-'+target+' li').removeClass('collapsed')
+      $('#ellipsis-'+target).css('display', 'none')
+    }
+    function partSumColumnCenter(target) {
+      let sum = 0
+      $('#target-list-'+target+' li').each(function(idx,el) {
+          const val = parseFloat($(el).text().split('，')[1].split('-')[0])
+          sum+=val
+      })
+      $('#ellipsis-'+target).text('合 ' + sum)
+    }
 
     $('#pa').on('click', function () {
       const action = t ? expand : collapse
@@ -89,6 +107,26 @@
         collapse(self)
       }
     })
+
+    $('#alreay-paid').on('click', function() {
+      if ($('#target-list-east').find('li').hasClass('collapsed')) {
+        expandColumnCenter('east')
+      } else {
+        collapseColumnCenter('east')
+      }
+    })
+
+    $('#not-paid-yet').on('click', function() {
+      if ($('#target-list-gao').find('li').hasClass('collapsed')) {
+        expandColumnCenter('gao')
+      } else {
+        collapseColumnCenter('gao')
+      }
+    })
+
+    // 计算已付、未付的各自合计值
+    partSumColumnCenter('east')
+    partSumColumnCenter('gao')
 
     // 未展开的li.separate下的各自金额之和
     $('#target-list-west li.separate').each(function(idx,el){

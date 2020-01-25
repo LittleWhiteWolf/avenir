@@ -34,7 +34,9 @@
     </ul>
   </div>
   <div class="column column-center">
-    <h4 style="">& 领币</h4>
+    <h4 id="alreay-paid" class="column-center-h4">& 领币
+      <span id="ellipsis-east" class="ellipsis">***</span>
+    </h4><!--已付-->
     <ul todo="居家服
     大显示屏(airplay)，扩展坞，视频转接线
     十九年间谋杀小叙
@@ -80,12 +82,11 @@
       <li><i class="fa fa-square-o"></i> 明洞王妃家，252 - 银卡</li>
       <li><i class="fa fa-square-o"></i> 京东白条床1/6，266.5 - 中信</li><!--每月1日-->
 <!--      <li><i class="fa fa-square-o"></i> 京东白条床2/6，266.5</li>-->
-      <li><i class="fa fa-square-o"></i> 套头衫，268 - 民生白</li>
       <li><i class="fa fa-square-o"></i> 借呗利息，272 - 银卡</li>
       <li><i class="fa fa-square-o"></i> 微粒贷利息，283.5 - 银卡</li>
       <li><i class="fa fa-square-o"></i> 海底捞，354 - 微信钱包</li>
       <li><i class="fa fa-square-o"></i> 大衣，399 - 光大紫</li>
-      <li><i class="fa fa-square-o"></i> 阿狗，479.2 - 微信钱包</li>
+      <li><i class="fa fa-square-o"></i> 阿狗，502.2 - 微信钱包</li>
       <!--
       电影-误杀：麦当劳可乐9.5+三只兔子86+停车费5 = 100.5
       修车：16（对不起砍价这点零头也没成功）
@@ -102,6 +103,7 @@
       嘉兴万达停车费：10
       山东手工水饺：14
       理发：20
+      套头衫退货：23
       -->
       <li><i class="fa fa-square-o"></i> 充加油卡，600 - 广发车金</li>
       <li><i class="fa fa-square-o"></i> 中信账单，741.66 - 银卡</li><!--本期借道：银卡>余利宝>中信-->
@@ -117,7 +119,9 @@
       <li><i class="fa fa-square-o"></i> 家用床B，4400 - 银卡</li>
 <!--      <li><i class="fa fa-square-o"></i> 装修-铝合金门窗，7000 - 家用</li>-->
     </ul>
-    <h4 style="">丢 ~</h4><!--不再那么想要的东西-->
+    <h4 id="not-paid-yet" style="cursor: pointer; position: relative">丢 ~
+      <span id="ellipsis-gao" class="ellipsis">***</span>
+    </h4><!--未付-->
     <ul todo="江小白" id="target-list-gao" style="list-style-type: none; margin-left: 5px;">
       <li><i class="fa fa-square-o"></i> 后羿精灵王，28</li>
       <li><i class="fa fa-square-o"></i> 司马懿魇语军师，28</li>
@@ -273,7 +277,9 @@ li.fulfilled {
   from { color: white; height: 0; margin-bottom: 0;}
   to { color: #555; height: 22px; margin-bottom: 8px;}
 }
-li.fulfilled-expand {
+li.fulfilled-expand,
+#target-list-east li.expanded,
+#target-list-gao li.expanded {
   color: #555;
   height: 22px;
   margin-bottom: 8px;
@@ -285,7 +291,9 @@ li.fulfilled-expand {
   from { color: #555; height: 22px; margin-bottom: 8px;}
   to { color: white; height: 0; margin-bottom: 0;}
 }
-li.fulfilled-collapse {
+li.fulfilled-collapse,
+#target-list-east li.collapsed,
+#target-list-gao li.collapsed {
   color: white;
   height: 0;
   margin-bottom: 0;
@@ -308,5 +316,18 @@ li i.fa-chevron-down {
 }
 #pa:hover {
   color: #258fb8;
+}
+.column-center-h4 {
+  cursor: pointer;
+  position: relative
+}
+.ellipsis {
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: 17px;
+  color: #555;
+  font-size: 13px;
+  font-weight: normal;
 }
 </style>
