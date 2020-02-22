@@ -79,7 +79,7 @@
           const val = parseFloat($(el).text().split('，')[1].split('-')[0])
           sum+=val
       })
-      $('#ellipsis-'+target).text('合 ' + sum)
+      $('#ellipsis-'+target).text('合 ' + sum.toFixed(2))
     }
 
     $('#pa').on('click', function () {
